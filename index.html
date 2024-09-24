@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="./tabs.js"></script>
+    <div class="tabs">
+        <div class="tabBtn" onclick="tabs()" ></div>
+        <div class="tabList" >
+            <h1 class="tabTit">zakładki</h1>
+            <div class="tab">
+                <a class="tabText" href="./index.html">główna strona</a>
+            </div>
+            <div class="tab">
+                <a class="tabText" href="./misja.html">nasza misja</a>
+            </div>
+            <div class="tab">
+                <a class="tabText" href="./galeria.html">galeria dobrego słowa</a>
+            </div>
+            <div class="tab">
+                <a class="tabText" href="./hagiografie.html">hagiografie</a>
+            </div>
+            <div class="tab">
+                <a class="tabText" href="./test.html">test czystości ducha</a>
+            </div>
+            <div class="tab">
+                <a class="tabText" href="./eye.html">wszechwidzące oko</a>
+            </div>
+            <div class="tab">
+                <a class="tabText" href="./licznik.html">odliczanie</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="navWrapper">
+        <div class="logo"></div>
+        <h1 class="logoText">strona dobrego świata</h1>
+    </div>
+    <div class="main">
+        <div id="magazine">
+            <div style="background-image: url(./textures/0001.jpg);"></div>
+            <div style="background-image: url(./textures/0002.jpg);"></div>
+            <div style="background-image: url(./textures/0003.jpg);"></div>
+            <div style="background-image: url(./textures/0004.jpg);"></div>
+            <div style="background-image: url(./textures/0005.jpg);"></div>
+            <div style="background-image: url(./textures/0006.jpg);"></div>
+            <div style="background-image: url(./textures/0007.jpg);"></div>
+            <div style="background-image: url(./textures/0008.jpg);"></div>
+            <div style="background-image: url(./textures/0009.jpg);"></div>
+            <div style="background-image: url(./textures/0010.jpg);"></div>
+            <div style="background-image: url(./textures/0011.jpg);"></div>
+            <div style="background-image: url(./textures/0012.jpg);"></div>
+            <div style="background-image: url(./textures/0013.jpg);"></div>
+            <div style="background-image: url(./textures/0014.jpg);"></div>
+            <div style="background-image: url(./textures/0015.jpg);"></div>
+            <div style="background-image: url(./textures/0016.jpg);"></div>
+            <div style="background-image: url(./textures/0017.jpg);"></div>
+            <div style="background-image: url(./textures/0018.jpg);"></div>
+            <div style="background-image: url(./textures/0019.jpg);"></div>
+            <div style="background-image: url(./textures/0020.jpg);"></div>
+            <div style="background-image: url(./textures/0021.jpg);"></div>
+            <div style="background-image: url(./textures/0022.jpg);"></div>
+            <div style="background-image: url(./textures/0023.jpg);"></div>
+            <div style="background-image: url(./textures/0024.jpg);"></div>
+            <div style="background-image: url(./textures/0025.jpg);"></div>
+            <div style="background-image: url(./textures/0026.jpg);"></div>
+            <div style="background-image: url(./textures/0027.jpg);"></div>
+            <div style="background-image: url(./textures/0028.jpg);"></div>
+            <div style="background-image: url(./textures/0029.jpg);"></div>
+            <div style="background-image: url(./textures/0030.jpg);"></div>
+            <div style="background-image: url(./textures/0031.jpg);"></div>
+            <div style="background-image: url(./textures/0032.jpg);"></div>
+            <div style="background-image: url(./textures/0033.jpg);"></div>
+            <div style="background-image: url(./textures/0034.jpg);"></div>
+            <div style="background-image: url(./textures/0035.jpg);"></div>
+            <div style="background-image: url(./textures/0036.jpg);"></div>
+            <div style="background-image: url(./textures/0037.jpg);"></div>
+            <div style="background-image: url(./textures/0038.jpg);"></div>
+            <div style="background-image: url(./textures/0039.jpg);"></div>
+            <div style="background-image: url(./textures/0040.jpg);"></div>
+            <div style="background-image: url(./textures/0041.jpg);"></div>
+    
+        </div>
+    </div>
+    <div class="messNav">
+        <div class="messWrap">
+            <div class="messBox" onload="check()"">
+                <div class="avatar"></div>
+                <div class="messContainer">
+                    <h1 class="name">Dupson</h1>
+                    <h1 class="messText">DUpa dupa dupa</h1>
+                    
+                </div>
+                <div class="dateContainer">
+                    <h1 class="date">15:20 <br>1/1/2024</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="loader">
+        <div class="loaderInner">
+            <div class="loaderImg"></div>
+            <h1 class="loaderText">Loading...</h1>
+        </div>
+        
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="./messages.js"></script>
+    <script src="./loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./turn.min.js"></script>
+    <script src="./turn.js"></script>
+
+    <script>
+        $('#magazine').turn({gradients: true, acceleration: true,autoCenter:false,});
+        $("#magazine").bind("turning", function(event, page, view) {
+            document.querySelector("#magazine").style.marginLeft=0
+});
+document.querySelector("#magazine").addEventListener("click", function(){
+    $("#magazine").turn("next");
+})
+      
+        
+    </script>
+
+</body>
+</html>

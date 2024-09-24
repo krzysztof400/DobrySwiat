@@ -1,0 +1,136 @@
+body{
+    overflow-y: scroll;
+}
+
+.misjaWrapper{
+
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+    align-items: center;
+}
+.naszaMisja{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.misjaTit,.audycjaTit{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4em;
+}
+.misjaP{
+    font-size: 2em;
+    line-height: 115%;
+}
+.kult{
+    width: 10vw;
+    float: right;
+}
+.materialyWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.materialyTxt{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.audycjeWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.filmy{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+}
+.filmWrap{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.film{
+    width: 20vw;
+
+    margin: 5vh;
+    margin-bottom: 0;
+}
+.filmTit{
+    margin: 0;
+}
+.doktrynaWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.doktrynaImg{
+    width: 15vw;
+    aspect-ratio: 1/1;
+    background-image: url("./textures/0001.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: none;
+}
+.downoald{
+    height: min-content;
+   
+    width: 10vw;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+    .naszaMisja{
+        width: 95%;
+        padding-top: 10%;
+    }
+    .misjaTit,.materialyTxt{
+        font-size: 2em;
+        text-align: center;
+    }
+    .misjaP{
+        font-size: 1.6em;
+    }
+    .kult{
+        width: 40%;
+    }
+    .audycjaTit{
+        font-size: 2.3em;
+    }
+    .filmWrap{
+        width: 70vw;
+        margin: 2vw;
+    }
+    .filmy{
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+     align-items: center;
+    }
+    .film{
+        width: 100%;
+        margin: 0%;
+    }
+    .filmTit{
+        font-size: 1.5em;
+    }
+    .doktrynaImg{
+        width: 40vw;
+    }
+}
