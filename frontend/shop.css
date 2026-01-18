@@ -1,0 +1,179 @@
+.shopSubtitle {
+	margin: 0.5rem 0 0;
+	font-size: 1rem;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.shopShell {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+	gap: 2rem;
+	padding: 2rem 5vw 3rem;
+	height: calc(100vh - 22vh);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.shopPanel {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	overflow: hidden;
+}
+
+.shopControls {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 1rem;
+	padding: 1.2rem;
+	border-radius: 1rem;
+	background: #ffffff;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.controlGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.controlGroup label {
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.controlGroup input,
+.controlGroup select {
+	padding: 0.6rem 0.8rem;
+	border-radius: 0.6rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	font-family: 'Spectral', serif;
+}
+
+.controlActions {
+	display: flex;
+	align-items: flex-end;
+	gap: 0.75rem;
+}
+
+.primaryBtn,
+.ghostBtn {
+	padding: 0.6rem 1.2rem;
+	border-radius: 999px;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	font-family: 'Spectral', serif;
+}
+
+.primaryBtn {
+	background: #111111;
+	color: #ffffff;
+}
+
+.ghostBtn {
+	background: rgba(0, 0, 0, 0.05);
+	color: #111111;
+}
+
+.status {
+	min-height: 1.5rem;
+	font-size: 0.95rem;
+	color: #b42318;
+}
+
+.productGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 1.2rem;
+	overflow-y: auto;
+	padding-right: 0.5rem;
+}
+
+.productCard {
+	background: #ffffff;
+	border-radius: 1.2rem;
+	padding: 1.2rem;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.productCard h3 {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+.productMeta {
+	font-size: 0.9rem;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.productActions {
+	display: flex;
+	gap: 0.6rem;
+	align-items: center;
+}
+
+.productActions input {
+	width: 60px;
+	padding: 0.3rem 0.5rem;
+	border-radius: 0.4rem;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.cartPanel {
+	background: #ffffff;
+	border-radius: 1.5rem;
+	padding: 1.5rem;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	overflow-y: auto;
+}
+
+.cartList {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+.cartItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.95rem;
+}
+
+.cartSummary {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.1rem;
+}
+
+.ordersBlock {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-top: 1rem;
+}
+
+.ordersList {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	font-size: 0.95rem;
+}
+
+.orderCard {
+	padding: 0.8rem;
+	background: rgba(0, 0, 0, 0.04);
+	border-radius: 0.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	.shopShell {
+		grid-template-columns: 1fr;
+		height: auto;
+	}
+}

@@ -7,6 +7,7 @@
     <title>I wish you a good world!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="shop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -49,8 +50,55 @@
 
     <div class="navWrapper">
         <div class="logo"></div>
-        <h1 class="logoText">Wkrotce otwarcie sklepu!</h1>
+        <h1 class="logoText">Dobry Świat — Sklep</h1>
+        <p class="shopSubtitle">Połącz z backendem i przeglądaj produkty oraz zamówienia.</p>
     </div>
+
+    <main class="shopShell">
+        <section class="shopPanel">
+            <div class="shopControls">
+                <div class="controlGroup">
+                    <label for="apiBase">API URL</label>
+                    <input id="apiBase" type="text" placeholder="http://localhost:8000/api">
+                </div>
+                <div class="controlGroup">
+                    <label for="userId">User ID</label>
+                    <input id="userId" type="number" min="1" placeholder="np. 1">
+                </div>
+                <div class="controlGroup">
+                    <label for="categorySelect">Kategoria</label>
+                    <select id="categorySelect">
+                        <option value="">Wszystkie</option>
+                    </select>
+                </div>
+                <div class="controlActions">
+                    <button id="savePrefs" class="primaryBtn">Zapisz</button>
+                    <button id="refreshBtn" class="ghostBtn">Odśwież</button>
+                </div>
+            </div>
+
+            <div id="status" class="status"></div>
+
+            <div id="productGrid" class="productGrid"></div>
+        </section>
+
+        <aside class="cartPanel">
+            <h2>Koszyk</h2>
+            <div id="cartList" class="cartList"></div>
+            <div class="cartSummary">
+                <span>Razem:</span>
+                <strong id="cartTotal">0.00 zł</strong>
+            </div>
+            <button id="checkoutBtn" class="primaryBtn">Złóż zamówienie</button>
+
+            <div class="ordersBlock">
+                <h3>Moje zamówienia</h3>
+                <div id="ordersList" class="ordersList"></div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="./shop.js"></script>
 </body>
 
 </html>
